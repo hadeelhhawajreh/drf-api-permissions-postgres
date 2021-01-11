@@ -7,5 +7,5 @@ from .views import HealthDetailsView, HealthListView
 
 urlpatterns = [
     path('', HealthListView.as_view(), name='health'),
-    path('<int:pk>/', HealthDetailsView.as_view(), name='health_details'),
+    path('/<int:pk>/', HealthDetailsView.as_view(), name='health_details'),
 ]
